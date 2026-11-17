@@ -1,0 +1,10 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" fill="none">
+  <rect width="64" height="64" y="8" fill="#F5B82E"></rect>
+
+  <path d="M12 52V27L23 42L32 27L43 42L54 27V52" stroke="#202326" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"></path>
+
+  <text x="82" y="39" fill="#202326" font-family="Arial, sans-serif" font-size="29" font-weight="900" letter-spacing="1.5">ММ ГРУП</text>
+
+  <text x="83" y="56" fill="#777777" font-family="Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="2.1">CONSTRUCTION &amp; SERVICES</text>
+</svg>

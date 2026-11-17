@@ -39,27 +39,35 @@ const advantages = [
 
 function WhyUs() {
   return (
-    <section className="bg-[#202326] px-6 py-24 lg:px-10 lg:py-32">
+    <section
+      aria-labelledby="why-us-heading"
+      className="bg-[#202326] px-6 py-24 lg:px-10 lg:py-32"
+    >
       <div className="mx-auto max-w-7xl">
-
         <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
 
           {/* Introduction */}
           <div>
             <div className="mb-6 flex items-center gap-3">
-              <span className="h-[2px] w-10 bg-[#F5B82E]" />
+              <span
+                aria-hidden="true"
+                className="h-[2px] w-10 bg-[#F5B82E]"
+              />
               <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#F5B82E]">
                 Защо ММ Груп
               </span>
             </div>
 
-            <h2 className="text-4xl leading-tight font-black tracking-tight text-white sm:text-5xl">
+            <h2
+              id="why-us-heading"
+              className="text-4xl leading-tight font-black tracking-tight text-white sm:text-5xl"
+            >
               Един партньор.
               <br />
               <span className="text-[#F5B82E]">Много решения.</span>
             </h2>
 
-            <p className="mt-7 max-w-lg text-base leading-8 text-white/60">
+            <p className="mt-7 max-w-lg text-base leading-8 text-white/80">
               Всеки проект има своите особености. ММ Груп предлага
               разнообразие от услуги, които позволяват да намерите
               подходящо решение за различни строителни и ремонтни
@@ -68,10 +76,10 @@ function WhyUs() {
 
             <a
               href="#contact"
-              className="mt-9 inline-flex items-center gap-3 border-b-2 border-[#F5B82E] pb-2 text-sm font-bold text-white transition-colors hover:text-[#F5B82E]"
+              className="mt-9 inline-flex items-center gap-3 border-b-2 border-[#F5B82E] pb-2 text-sm font-bold text-white transition-colors hover:text-[#F5B82E] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#F5B82E] motion-reduce:transition-none"
             >
               Обсъдете вашия проект
-              <ArrowUpRight size={18} />
+              <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </div>
 
@@ -83,14 +91,20 @@ function WhyUs() {
               return (
                 <article
                   key={advantage.number}
-                  className="border-b border-white/10 p-7 transition-colors hover:bg-white/[0.03] sm:even:border-l sm:even:border-white/10"
+                  className="border-b border-white/10 p-7 transition-colors hover:bg-white/[0.03] sm:even:border-l sm:even:border-white/10 motion-reduce:transition-none"
                 >
                   <div className="flex items-center justify-between">
-                    <div className="flex h-12 w-12 items-center justify-center bg-[#F5B82E] text-[#202326]">
+                    <div
+                      aria-hidden="true"
+                      className="flex h-12 w-12 items-center justify-center bg-[#F5B82E] text-[#202326]"
+                    >
                       <Icon size={23} />
                     </div>
 
-                    <span className="text-sm font-bold text-white/25">
+                    <span
+                      aria-hidden="true"
+                      className="text-sm font-bold text-white/60"
+                    >
                       {advantage.number}
                     </span>
                   </div>
@@ -99,7 +113,7 @@ function WhyUs() {
                     {advantage.title}
                   </h3>
 
-                  <p className="mt-3 text-sm leading-7 text-white/50">
+                  <p className="mt-3 text-sm leading-7 text-white/75">
                     {advantage.description}
                   </p>
                 </article>

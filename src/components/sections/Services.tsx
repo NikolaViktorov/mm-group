@@ -14,18 +14,21 @@ function Services() {
         <div className="mb-16 flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <div className="max-w-2xl">
             <div className="mb-6 flex items-center gap-3">
-              <span className="h-[2px] w-10 bg-[#D99E19]" />
-              <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B78312]">
+              <span
+                aria-hidden="true"
+                className="h-[2px] w-10 bg-[#D99E19]"
+              />
+              <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#8A6200]">
                 Какво предлагаме
               </span>
             </div>
 
             <h2 className="text-4xl leading-tight font-black tracking-tight text-[#202326] sm:text-5xl">
               Нашите
-              <span className="text-[#B78312]"> услуги</span>
+              <span className="text-[#8A6200]"> услуги</span>
             </h2>
 
-            <p className="mt-6 max-w-xl text-base leading-8 text-[#202326]/60">
+            <p className="mt-6 max-w-xl text-base leading-8 text-[#202326]/80">
               Широка гама от строителни, ремонтни и специализирани
               услуги, събрани на едно място. Разгледайте с какво
               можем да ви бъдем полезни.
@@ -34,12 +37,13 @@ function Services() {
 
           <a
             href="#contact"
-            className="group inline-flex shrink-0 items-center gap-3 self-start border-b-2 border-[#F5B82E] pb-2 text-sm font-bold text-[#202326] transition-colors hover:text-[#B78312] lg:self-auto"
+            className="group inline-flex shrink-0 items-center gap-3 self-start border-b-2 border-[#F5B82E] pb-2 text-sm font-bold text-[#202326] transition-colors hover:text-[#8A6200] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#202326] lg:self-auto motion-reduce:transition-none"
           >
             Свържете се с нас
             <ArrowUpRight
               size={19}
-              className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+              aria-hidden="true"
+              className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 motion-reduce:transition-none"
             />
           </a>
         </div>
@@ -57,17 +61,17 @@ function Services() {
             <h3 className="text-2xl font-black text-white">
               Имате проект пред себе си?
             </h3>
-            <p className="mt-2 text-sm leading-6 text-white/55">
+            <p className="mt-2 text-sm leading-6 text-white/75">
               Свържете се с нас и обсъдете вашите нужди.
             </p>
           </div>
 
           <a
             href="#contact"
-            className="inline-flex shrink-0 items-center gap-3 bg-[#F5B82E] px-7 py-4 text-sm font-bold text-[#202326] transition-colors hover:bg-white"
+            className="inline-flex shrink-0 items-center gap-3 bg-[#F5B82E] px-7 py-4 text-sm font-bold text-[#202326] transition-colors hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white motion-reduce:transition-none"
           >
             Изпратете запитване
-            <ArrowUpRight size={18} />
+            <ArrowUpRight size={18} aria-hidden="true" />
           </a>
         </div>
       </div>
